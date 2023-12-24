@@ -1,6 +1,39 @@
-* {
+body {
+    background-color: #f1f1f1;
+    padding: 0 0px 20px 0px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    display: none; /* Hide columns by default */
+}
+
+/* * {
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 .row {
@@ -10,20 +43,20 @@
 }
   
   /* Create four equal columns that sits next to each other */
-.column {
+/* .column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
     display: none;
-}
-  
+} */
+
 .column img {
     margin-top: 8px;
     vertical-align: middle;
     object-fit: cover;
     width: 100%;
     height: 500px;
-}
+} 
 
 /* Clear floats after rows */
 .row:after {
@@ -31,6 +64,13 @@
     display: table;
     clear: both;
 }
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
 /* The "show" class is added to the filtered elements */
 .show {
     display: block;
@@ -52,22 +92,17 @@
   
   /* Add a dark background color to the active button */
 .btn.active {
-    background-color: #666;
-     color: white;
+    background-color: hsl(44, 100%, 66%);
+     color: black;
 }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+
+@media only screen and (min-width: 768px) {
     .column {
-        flex: 50%;
-        max-width: 50%;
+        float: left;
+        width: 33.33%;
+        
     }
+    
 }
   
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
