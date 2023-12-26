@@ -49,4 +49,5 @@ for (var i = 0; i < btns.length; i++) {
 // Expand Images on click
 function expandImage(img) {
     img.classList.toggle("expanded");
-  }
+}
+
