@@ -45,3 +45,8 @@ for (var i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
+
+// Expand Images on click
+function expandImage(img) {
+    img.classList.toggle("expanded");
+  }
